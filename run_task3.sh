@@ -13,10 +13,12 @@ SIF=$GEM5_WORKSPACE/gem5_rv.sif
 
 BINARY=./workload/spmv/spmv.bin
 
-# Prevajanje RISC-V binarke znotraj apptainer okolja
-cd workload/spmv
-srun apptainer exec $SIF make
-cd ../..
+# Prevajanje RISC-V binarke — -C poda pot do Makefile ker cd ne vpliva na srun
+srun apptainer exec $SIF make -C workload/spmv
+if [ $? -ne 0 ]; then
+    echo "Napaka pri prevajanju! Ustavljam."
+    exit 1
+fi
 
 # Zunanja zanka: dve velikosti L1 predpomnilnika (zahtevi naloge)
 for CACHE in 8KiB 64KiB; do

@@ -14,10 +14,12 @@ SIF=$GEM5_WORKSPACE/gem5_rv.sif
 BINARY=./workload/scaled_dot_product/scaled_dot_product.bin
 CACHE=8KiB
 
-# Prevajanje RISC-V binarke znotraj apptainer okolja
-cd workload/scaled_dot_product
-srun apptainer exec $SIF make
-cd ../..
+# Prevajanje RISC-V binarke — -C poda pot do Makefile ker cd ne vpliva na srun
+srun apptainer exec $SIF make -C workload/scaled_dot_product
+if [ $? -ne 0 ]; then
+    echo "Napaka pri prevajanju! Ustavljam."
+    exit 1
+fi
 
 # Zanka čez vse zahtevane VLEN vrednosti (naloga zahteva 128–4096)
 for VLEN in 128 256 512 1024 2048 4096; do
