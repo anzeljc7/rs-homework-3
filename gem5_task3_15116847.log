@@ -1,0 +1,147 @@
+make: Entering directory '/d/hpc/home/ta3667/rs-homework-3/workload/spmv'
+riscv64-linux-gnu-gcc -o spmv.bin spmv.c -static -fopenmp -lpthread -I/d/hpc/projects/FRI/GEM5/gem5_workspace/gem5//include -L/d/hpc/projects/FRI/GEM5/gem5_workspace/gem5//util/m5/build/riscv/out -I/d/hpc/projects/FRI/GEM5/gem5_workspace/gem5//util/m5/src -march=rv64gcv -lm5 -lm -DGEM5
+make: Leaving directory '/d/hpc/home/ta3667/rs-homework-3/workload/spmv'
+=== VLEN=256 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:321: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May 10 2026 17:29:34
+gem5 executing on wn101.arnes.si, pid 150131
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task3/cache_8KiB/vlen_256 cpu_benchmark.py 256 8KiB ./workload/spmv/spmv.bin
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1127: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/d/hpc/home/ta3667/rs-homework-3/workload/spmv/spmv.bin'
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+=== VLEN=512 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:321: info: RVV enabled, VLEN = 512 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May 10 2026 17:29:41
+gem5 executing on wn101.arnes.si, pid 150456
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task3/cache_8KiB/vlen_512 cpu_benchmark.py 512 8KiB ./workload/spmv/spmv.bin
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1127: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/d/hpc/home/ta3667/rs-homework-3/workload/spmv/spmv.bin'
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+=== VLEN=1024 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:321: info: RVV enabled, VLEN = 1024 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May 10 2026 17:29:47
+gem5 executing on wn101.arnes.si, pid 150791
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task3/cache_8KiB/vlen_1024 cpu_benchmark.py 1024 8KiB ./workload/spmv/spmv.bin
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1127: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/d/hpc/home/ta3667/rs-homework-3/workload/spmv/spmv.bin'
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+=== VLEN=256 bitov, L1=64KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:321: info: RVV enabled, VLEN = 256 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May 10 2026 17:29:53
+gem5 executing on wn101.arnes.si, pid 151115
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task3/cache_64KiB/vlen_256 cpu_benchmark.py 256 64KiB ./workload/spmv/spmv.bin
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1127: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/d/hpc/home/ta3667/rs-homework-3/workload/spmv/spmv.bin'
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+=== VLEN=512 bitov, L1=64KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:321: info: RVV enabled, VLEN = 512 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May 10 2026 17:30:00
+gem5 executing on wn101.arnes.si, pid 151439
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task3/cache_64KiB/vlen_512 cpu_benchmark.py 512 64KiB ./workload/spmv/spmv.bin
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1127: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/d/hpc/home/ta3667/rs-homework-3/workload/spmv/spmv.bin'
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+=== VLEN=1024 bitov, L1=64KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Global frequency set at 1000000000000 ticks per second
+src/arch/riscv/isa.cc:321: info: RVV enabled, VLEN = 1024 bits, ELEN = 64 bits
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:32] into equal-sized buckets. Rounding up.
+src/base/stats/storage.hh:278: warn: Bucket size (4) does not divide range [1:8] into equal-sized buckets. Rounding up.
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May 10 2026 17:30:06
+gem5 executing on wn101.arnes.si, pid 151792
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task3/cache_64KiB/vlen_1024 cpu_benchmark.py 1024 64KiB ./workload/spmv/spmv.bin
+
+info: Standard input is not a terminal, disabling listeners.
+src/sim/syscall_emul.cc:97: warn: ignoring syscall set_robust_list(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.hh:1127: warn: readlink() called on '/proc/self/exe' may yield unexpected results in various settings.
+      Returning '/d/hpc/home/ta3667/rs-homework-3/workload/spmv/spmv.bin'
+src/sim/mem_state.cc:443: info: Increasing stack size by one page.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
