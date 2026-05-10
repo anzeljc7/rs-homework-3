@@ -29,7 +29,7 @@ for CACHE in 8KiB 64KiB; do
         for IDX in 1 2 3 4; do
             KERNEL=${KERNELS[$((IDX - 1))]}
 
-            CPI=$(awk "/Begin Simulation/{n++} n==$IDX && /system\.cpu\.cpi /{print \$2; exit}" "$FILE")
+            CPI=$(awk "/Begin Simulation/{n++} n==$IDX && /board\.processor\.cores\.core\.cpi /{print \$2; exit}" "$FILE")
             MISS=$(awk "/Begin Simulation/{n++} n==$IDX && /l1dcaches\.overallMisses::total/{print \$2; exit}" "$FILE")
 
             printf "%-6s | %-14s | %-10s | %-12s\n" \

@@ -17,8 +17,8 @@ for VLEN in 128 256 512 1024 2048 4096; do
 
     # Awk razdeli datoteko na razdelke ob "Begin Simulation Statistics"
     # in pobere vrednost iskane metrike iz zahtevnega razdelka (n==1 ali n==2)
-    CPI_SCALAR=$(awk '/Begin Simulation/{n++} n==1 && /system\.cpu\.cpi /{print $2; exit}' "$FILE")
-    CPI_VECTOR=$(awk '/Begin Simulation/{n++} n==2 && /system\.cpu\.cpi /{print $2; exit}' "$FILE")
+    CPI_SCALAR=$(awk '/Begin Simulation/{n++} n==1 && /board\.processor\.cores\.core\.cpi /{print $2; exit}' "$FILE")
+    CPI_VECTOR=$(awk '/Begin Simulation/{n++} n==2 && /board\.processor\.cores\.core\.cpi /{print $2; exit}' "$FILE")
 
     TIME_SCALAR=$(awk '/Begin Simulation/{n++} n==1 && /^simSeconds /{print $2; exit}' "$FILE")
     TIME_VECTOR=$(awk '/Begin Simulation/{n++} n==2 && /^simSeconds /{print $2; exit}' "$FILE")

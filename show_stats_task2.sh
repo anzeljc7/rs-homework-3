@@ -21,8 +21,8 @@ for CACHE in 8KiB 64KiB; do
         fi
 
         # CPI iz 1. razdelka (skalarni) in 2. razdelka (vektorski)
-        CPI_S=$(awk '/Begin Simulation/{n++} n==1 && /system\.cpu\.cpi /{print $2; exit}' "$FILE")
-        CPI_V=$(awk '/Begin Simulation/{n++} n==2 && /system\.cpu\.cpi /{print $2; exit}' "$FILE")
+        CPI_S=$(awk '/Begin Simulation/{n++} n==1 && /board\.processor\.cores\.core\.cpi /{print $2; exit}' "$FILE")
+        CPI_V=$(awk '/Begin Simulation/{n++} n==2 && /board\.processor\.cores\.core\.cpi /{print $2; exit}' "$FILE")
 
         # L1 podatkovni cache missi iz 1. in 2. razdelka
         MISS_S=$(awk '/Begin Simulation/{n++} n==1 && /l1dcaches\.overallMisses::total/{print $2; exit}' "$FILE")
