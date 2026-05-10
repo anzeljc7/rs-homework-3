@@ -145,3 +145,4 @@ src/sim/syscall_emul.hh:1127: warn: readlink() called on '/proc/self/exe' may yi
       Returning '/d/hpc/home/ta3667/rs-homework-3/workload/spmv/spmv.bin'
 src/sim/mem_state.cc:443: info: Increasing stack size by one page.
 src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+Vse simulacije za nalogo 3 zaključene.
