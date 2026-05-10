@@ -1,0 +1,129 @@
+make: *** No targets specified and no makefile found.  Stop.
+srun: error: wn101: task 0: Exited with exit code 2
+=== VLEN=128 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Exception: Local path specified for resource, './workload/scaled_dot_product/scaled_dot_product.bin', does not exist.
+
+At:
+  src/python/gem5/resources/resource.py(159): get_local_path
+  src/python/gem5/components/boards/se_binary_workload.py(77): _create_process
+  src/python/gem5/components/boards/se_binary_workload.py(266): set_se_binary_workload
+  cpu_benchmark.py(40): <module>
+  src/python/m5/main.py(687): main
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May  9 2026 15:34:08
+gem5 executing on wn101.arnes.si, pid 76896
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task1/vlen_128 cpu_benchmark.py 128 8KiB ./workload/scaled_dot_product/scaled_dot_product.bin
+
+info: Standard input is not a terminal, disabling listeners.
+srun: error: wn101: task 0: Exited with exit code 1
+=== VLEN=256 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Exception: Local path specified for resource, './workload/scaled_dot_product/scaled_dot_product.bin', does not exist.
+
+At:
+  src/python/gem5/resources/resource.py(159): get_local_path
+  src/python/gem5/components/boards/se_binary_workload.py(77): _create_process
+  src/python/gem5/components/boards/se_binary_workload.py(266): set_se_binary_workload
+  cpu_benchmark.py(40): <module>
+  src/python/m5/main.py(687): main
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May  9 2026 15:34:10
+gem5 executing on wn101.arnes.si, pid 77215
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task1/vlen_256 cpu_benchmark.py 256 8KiB ./workload/scaled_dot_product/scaled_dot_product.bin
+
+info: Standard input is not a terminal, disabling listeners.
+srun: error: wn101: task 0: Exited with exit code 1
+=== VLEN=512 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Exception: Local path specified for resource, './workload/scaled_dot_product/scaled_dot_product.bin', does not exist.
+
+At:
+  src/python/gem5/resources/resource.py(159): get_local_path
+  src/python/gem5/components/boards/se_binary_workload.py(77): _create_process
+  src/python/gem5/components/boards/se_binary_workload.py(266): set_se_binary_workload
+  cpu_benchmark.py(40): <module>
+  src/python/m5/main.py(687): main
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May  9 2026 15:34:11
+gem5 executing on wn101.arnes.si, pid 77534
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task1/vlen_512 cpu_benchmark.py 512 8KiB ./workload/scaled_dot_product/scaled_dot_product.bin
+
+info: Standard input is not a terminal, disabling listeners.
+srun: error: wn101: task 0: Exited with exit code 1
+=== VLEN=1024 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Exception: Local path specified for resource, './workload/scaled_dot_product/scaled_dot_product.bin', does not exist.
+
+At:
+  src/python/gem5/resources/resource.py(159): get_local_path
+  src/python/gem5/components/boards/se_binary_workload.py(77): _create_process
+  src/python/gem5/components/boards/se_binary_workload.py(266): set_se_binary_workload
+  cpu_benchmark.py(40): <module>
+  src/python/m5/main.py(687): main
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May  9 2026 15:34:12
+gem5 executing on wn101.arnes.si, pid 77852
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task1/vlen_1024 cpu_benchmark.py 1024 8KiB ./workload/scaled_dot_product/scaled_dot_product.bin
+
+info: Standard input is not a terminal, disabling listeners.
+srun: error: wn101: task 0: Exited with exit code 1
+=== VLEN=2048 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Exception: Local path specified for resource, './workload/scaled_dot_product/scaled_dot_product.bin', does not exist.
+
+At:
+  src/python/gem5/resources/resource.py(159): get_local_path
+  src/python/gem5/components/boards/se_binary_workload.py(77): _create_process
+  src/python/gem5/components/boards/se_binary_workload.py(266): set_se_binary_workload
+  cpu_benchmark.py(40): <module>
+  src/python/m5/main.py(687): main
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May  9 2026 15:34:13
+gem5 executing on wn101.arnes.si, pid 78170
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task1/vlen_2048 cpu_benchmark.py 2048 8KiB ./workload/scaled_dot_product/scaled_dot_product.bin
+
+info: Standard input is not a terminal, disabling listeners.
+srun: error: wn101: task 0: Exited with exit code 1
+=== VLEN=4096 bitov, L1=8KiB ===
+warn: The `CustomResource` class is deprecated. Please use an `AbstractResource` subclass instead.
+Exception: Local path specified for resource, './workload/scaled_dot_product/scaled_dot_product.bin', does not exist.
+
+At:
+  src/python/gem5/resources/resource.py(159): get_local_path
+  src/python/gem5/components/boards/se_binary_workload.py(77): _create_process
+  src/python/gem5/components/boards/se_binary_workload.py(266): set_se_binary_workload
+  cpu_benchmark.py(40): <module>
+  src/python/m5/main.py(687): main
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 25.1.0.0
+gem5 compiled Mar 23 2026 12:51:43
+gem5 started May  9 2026 15:34:14
+gem5 executing on wn101.arnes.si, pid 78489
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/RISCV_ALL_RUBY/gem5.opt --outdir=results_task1/vlen_4096 cpu_benchmark.py 4096 8KiB ./workload/scaled_dot_product/scaled_dot_product.bin
+
+info: Standard input is not a terminal, disabling listeners.
+srun: error: wn101: task 0: Exited with exit code 1
+Vse simulacije za nalogo 1 zaključene.

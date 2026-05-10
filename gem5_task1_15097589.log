@@ -1,0 +1,5 @@
+make: Entering directory '/d/hpc/home/ta3667/rs-homework-3/workload/scaled_dot_product'
+make: Leaving directory '/d/hpc/home/ta3667/rs-homework-3/workload/scaled_dot_product'
+make: *** No targets specified and no makefile found.  Stop.
+srun: error: wn101: task 0: Exited with exit code 2
+Napaka pri prevajanju! Ustavljam.
